@@ -1,0 +1,289 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, /*h1 , h2,*/ h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, /*li*/, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */
+/* kinda overkill since here was not used so much of reseted style tags */
+
+
+body{
+  
+  color:#1c231b;
+}
+
+.mainbox{ width:1311px; margin:auto;
+   overflow:hidden;
+   background-color:#c0ccbd;
+   text-align:center;
+   border-radius:5px;
+   
+   
+}
+.subheading{
+   font-size:1.4em;
+}
+.wrappcon{ /* content wrapper*/
+   display:inline-block;
+   overflow:hidden;
+   padding-bottom: 10px;
+   margin:0;
+}
+
+.imageholder{
+   margin:auto;
+   display:inline-block;
+   padding:3px;
+   background-color:white;
+   border:1px solid #9da59b;
+   border-radius:3px;
+      
+}
+.fineScalingLinksAndImage{  /* my class names are terrible*/
+   position:relative;       /* hook for placing -scalable- links on wizards hat, --> to author's website profile*/
+}
+.wizardsHat{          /*class of divs inside .fineScalingLi... */
+  
+    position:absolute;
+    outline:none;     /* removing dotted outline around links*/
+}
+.wizardsHat:visited{
+   border:none;
+}
+.wizardsHat.part1{    /* fine tuning links(blocks) to fit to cone part of the hat*/
+   
+    width:27%;
+    height:15%;
+    top:0.05%;
+    left:38%;
+}
+.wizardsHat.part2{
+    width:44%;
+    height:15.5%;
+    top:15%;
+    left:27%;
+
+}
+.mainImg{
+   width:730px;
+   height:1215px;
+   
+}
+.imageholder p{
+    font-size:14px;
+    font-style:italic;
+    width:730px;
+    margin:0;
+    padding: 14px 2px 14px 2px;
+    background-color:white;
+}
+ul{
+    float:right; 
+    margin:auto; 
+    width:486px;
+    overflow:hidden;
+    position:relative; /* for positioning "h2" inside "ul" */
+    padding-top:25px; 
+    padding-left:45px; 
+    padding-right:10px;
+}
+ul h2{
+   position:absolute;
+   text-align:center;
+   margin: auto;
+   top:0px;  
+   left:150px;
+   
+}
+
+ul li {
+   text-align:left;
+}
+
+@font-face{   
+  font-family: "halfelvenbold";
+  src: url('../fonts/halfelvenbold.ttf');
+}
+@font-face{
+   font-family:"HobbitonBrushHand";
+   src: url("../fonts/hobbitonbrushhand.ttf"); /* courtesy of lady here http://www.nancylorenz.com */
+}
+.quote, .belonging {
+  
+   margin-bottom:0;
+   font-size:1.4em; 
+   line-height:1em;  
+   font-weight:normal;
+   font-style:italic;
+   color:#384736;
+}
+.quote{
+   font-family:"HobbitonBrushHand",serif;
+   font-size:2em;
+}
+
+.endText, .belonging{
+
+
+   text-align:left;
+   font-size:1em;
+  
+}
+.endText{
+   text-align:right;
+}
+.link{
+   text-decoration:none;
+   font-size:1.2em;
+   color:#1b418e;
+    
+}
+.link:hover{
+   text-decoration:underline;
+}
+
+
+@media screen and (min-width:901px) and (max-width:1620px){
+    .mainbox{
+         width:850px;
+         overflow:hidden;
+     }
+   
+    .subheading{
+         padding:0px 15px;
+     }
+     ul {
+         float:none;
+         display:inline-block;
+         padding:100px 0 0 20px;      
+         width:586px;
+         padding-left:25px;
+        
+         
+          
+         
+     }
+     ul h2{
+        text-align:left;
+        top:75px;
+        left:0px;
+     }
+ 
+}
+
+@media  (max-width:900px){
+      
+       .mainbox{
+          width:620px;
+        }
+       .mainImg{
+          width:580px;
+          height:965.34px;
+          
+       }
+       
+       .imageholder p{
+          width:586px;
+       }
+      
+     ul{
+          float:none;
+          padding-top:80px;
+          margin-right:40px; 
+          padding-left:20px;
+ 
+     }  
+     ul h2{
+          top:50px;
+          left:100px;
+     }
+        
+}
+
+@media (max-width:639px){
+     .mainbox{
+       width:95%;
+     }
+     .subheading{
+        padding-left:1%;
+        padding-right:1%;
+     } 
+    .imageholder{
+        width:98%;
+        padding:0.4% 0 0 0; 
+        border-radius:.5%;
+      
+     }
+    .imageholder p{
+       width:90%;
+       margin-left:5%;
+       padding-top:2%;
+       padding-bottom:2%;
+     }
+
+
+     .mainImg{
+       width: 97%;
+       padding:0;
+       height:50%;
+     }
+    
+    ul{
+       width:90%;
+       position:static;
+       margin:auto;
+    
+       padding-top:10%;
+       padding-right:1%;
+       padding-left:5.8%;
+    }
+   ul h2{
+      font-size:1.4em;
+      text-align:left;
+      left:5%;
+      top:50%;
+      padding:0; margin:0;
+      position:static; /* now don't want absolute positioning, h2 goes with the scalable flow of page*/
+      
+    }
+    .endText{
+      width:90%;
+      margin-top:10%; 
+    }
+
+     
+   ul li p{
+     text-align:left;
+     margin:14px 0;
+   }
+
+   
+}
+
+@media (max-width:320px){ 
+    body{                 /* end scaling, fix to 320 px*/
+       width:320px;
+       margin:0;
+     }       
+}
+
