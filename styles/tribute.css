@@ -116,7 +116,7 @@ ul{
     padding-left:45px; 
     padding-right:10px; 
     font-family: Arial, Helvetica, sans-serif;
-    line-height:1.2em
+    line-height:1.2em;
 }
 ul h2{
    position:absolute;
@@ -131,6 +131,45 @@ ul h2{
 
 ul li {
    text-align:left;
+}
+p.hoverable{  /* tooltip container*/
+   position:relative;      /* hook for tooltip */     
+   display:inline-block;   
+   margin:0;
+   padding:0;
+   border-bottom: 1px dotted black;
+   
+}
+.tooltip{
+   visibility:hidden;
+   position:absolute;
+   bottom:125%;
+   left:10%;
+   background-color:#2f302f; 
+   width:80px; 
+   height:25px;
+   line-height:1.65em;
+   border-radius:5px;
+   text-align:center;
+   color:white; 
+   font-size:0.9em;
+
+   opacity:0;  
+   transition: opacity 1s; /* smoother tooltip transition*/
+}
+.tooltip:after{ /* puting tooltip arrow */
+   content:" ";
+   position:absolute;
+   top:100%;
+   left:13%;
+   border: 5px solid;
+   border-color:#2f302f transparent transparent transparent;
+           
+   
+}
+.hoverable:hover .tooltip{ /* when hover, show tooltip*/
+   visibility:visible;
+   opacity:1;
 }
 .quote, .belonging {
   
