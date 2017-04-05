@@ -44,9 +44,7 @@ body{
    overflow:hidden;
    background-color:#c0ccbd;
    text-align:center;
-   border-radius:5px;
-   
-   
+   border-radius:5px;   
 }
 .subheading{
    font-size:20px;
@@ -285,7 +283,7 @@ p.hoverable{  /* tooltip container*/
      .mainImg{
        width: 97%;
        padding:0;
-       height:50%;
+       height:auto;
      }
     
     ul{
